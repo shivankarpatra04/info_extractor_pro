@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InfoExtractor Pro</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+
+<body>
+    <h1>InfoExtractor Pro</h1>
+    <h2>Extract Structured Information from Unstructured Data</h2>
+    <h3>Upload a Document or Paste Text Below</h3>
+    <form action="/upload" method="POST" enctype="multipart/form-data">
+        <input type="file" name="file" accept=".txt,.docx">
+        <br><br>
+        <textarea name="text_input" rows="10" cols="50" placeholder="Or paste your text here..."></textarea>
+        <br><br>
+        <input type="submit" value="Extract Information">
+    </form>
+</body>
+
+</html>
